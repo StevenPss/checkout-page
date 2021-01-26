@@ -5,7 +5,7 @@ import Counter from './Counter'
 
 function CartSummary() {
     return (
-        <div className="flex flex-col bg-gray-100 px-5 py-10 rounded-xl">
+        <div className="flex flex-col md:order-1 md:h-3/5 md:ml-20 bg-gray-100 px-5 py-10 rounded-xl">
             <div className="flex mb-8">
                 <div>
                     <img className="rounded-xl h-40" src={CartBackPackImage} alt="Backpack"/>
