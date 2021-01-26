@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FormControl, InputAdornment, InputLabel, ListItemIcon, ListItemText, MenuItem, TextField, Select, Checkbox, Button } from '@material-ui/core'
+import { FormControl, InputAdornment, InputLabel, ListItemIcon, ListItemText, MenuItem, TextField, Select, Checkbox, Button, createMuiTheme } from '@material-ui/core'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import HomeIcon from '@material-ui/icons/Home';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
@@ -113,6 +113,10 @@ function ShippingAddress() {
             </div>
             <div className="mt-2">
                 <Checkbox
+                    color="primary"
+                    style={{
+                        color: "#F59E0B",
+                    }}
                     checked={checked}
                     onChange={handleCheckBoxChange}
                     inputProps={{ 'aria-label': 'primary checkbox' }}
@@ -120,8 +124,11 @@ function ShippingAddress() {
                 <p className="text-xs font-bold inline-block">Save this information for next time?</p>
             </div>
 
-            <div className="flex flex-row-reverse mb-20">
+            <div className="flex flex-row-reverse mt-2 mb-20">
                 <Button
+                style={{
+                    backgroundColor: "#F59E0B",
+                }}
                 variant="contained"
                 color="primary"
                 >
